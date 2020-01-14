@@ -1,15 +1,13 @@
 {
-    "name": "andreaskiessling/grumphp-conventions-typo3",
+    "name": "extrameile/grumphp-conventions-typo3",
     "type": "library",
     "description": "Provides coding conventions for TYPO3 extensions",
-
     "authors": [
         {
             "name": "Andreas Kiessling",
-            "email": "andreas@powered-by-coffee.de"
+            "email": "kiessling@extrameile-gehen.de"
         }
     ],
-
     "require": {
         "povils/phpmnd": "^2.1",
         "friendsofphp/php-cs-fixer": "^2.13",

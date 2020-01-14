@@ -20,7 +20,7 @@ composer config extra.typo3/cms.web-dir .Build/Web
 
 ~~~shell
 composer config repositories.grumphp-conventions-typo3 vcs https://github.com/akiessling/grumphp-conventions-typo3.git
-composer require --dev andreaskiessling/grumphp-conventions-typo3 dev-master
+composer require --dev extrameile/grumphp-conventions-typo3 dev-master
 ~~~
 
 ## Configure grumphp
@@ -28,11 +28,11 @@ composer require --dev andreaskiessling/grumphp-conventions-typo3 dev-master
 Create a grumphp.yml in your extension directory and insert this content:
 ~~~yaml
 imports:
-  - { resource: .Build/vendor/andreaskiessling/grumphp-conventions-typo3/grumphp.yml }
+  - { resource: .Build/vendor/extrameile/grumphp-conventions-typo3/grumphp.yml }
 ~~~
 or symlink it from this package
 ~~~bash
-ln -s .Build/vendor/andreaskiessling/grumphp-conventions-typo3/grumphp.yml .
+ln -s .Build/vendor/extrameile/grumphp-conventions-typo3/grumphp.yml .
 ~~~
 
 ## Running it
