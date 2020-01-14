@@ -12,35 +12,35 @@
 
   <!-- used for calling some T3 related methods -->
   <rule ref="rulesets/cleancode.xml">
-    <exclude name="StaticAccess" />
-    <exclude name="ElseExpression" />
+    <exclude name="StaticAccess"/>
+    <exclude name="ElseExpression"/>
   </rule>
 
   <rule ref="rulesets/design.xml">
-    <exclude name="CouplingBetweenObjects" />
+    <exclude name="CouplingBetweenObjects"/>
   </rule>
 
   <rule ref="rulesets/design.xml/CouplingBetweenObjects">
     <properties>
-      <property name="minimum" value="15" />
+      <property name="minimum" value="15"/>
     </properties>
   </rule>
 
   <rule ref="rulesets/naming.xml">
-    <exclude name="LongVariable" />
+    <exclude name="LongVariable"/>
   </rule>
 
   <!-- model fields in extensions tend to have longer field names -->
   <rule ref="rulesets/naming.xml/LongVariable">
     <properties>
-      <property name="maximum" value="40" />
+      <property name="maximum" value="40"/>
     </properties>
   </rule>
 
-  <!-- Import the entire unused code rule set -->
+
   <rule ref="rulesets/codesize.xml">
-    <exclude name="CyclomaticComplexity" />
-    <exclude name="TooManyFields" />
+    <exclude name="CyclomaticComplexity"/>
+    <exclude name="TooManyFields"/>
   </rule>
 
   <rule ref="rulesets/codesize.xml/TooManyFields">
@@ -52,15 +52,22 @@
   <rule ref="rulesets/codesize.xml/CyclomaticComplexity">
     <priority>1</priority>
     <properties>
-      <property name="reportLevel" value="12" />
+      <property name="reportLevel" value="12"/>
     </properties>
   </rule>
 
-  <rule ref="rulesets/unusedcode.xml" />
+  <rule ref="rulesets/unusedcode.xml">
+    <exclude name="UnusedLocalVariable"/>
+  </rule>
+  <rule ref="rulesets/unusedcode.xml/UnusedLocalVariable">
+    <properties>
+      <property name="allow-unused-foreach-variables" value="true"/>
+    </properties>
+  </rule>
 
   <rule ref="rulesets/controversial.xml">
     <!--used a lot in T3 core-->
-    <exclude name="Superglobals" />
+    <exclude name="Superglobals"/>
   </rule>
 
 </ruleset>

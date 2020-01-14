@@ -109,7 +109,11 @@
   <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking"/>
   <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/>
   <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
-  <rule ref="SlevomatCodingStandard.Variables.UnusedVariable"/>
+  <rule ref="SlevomatCodingStandard.Variables.UnusedVariable">
+    <properties>
+      <property name="ignoreUnusedValuesWhenOnlyKeysAreUsedInForeach" value="true"/>
+    </properties>
+  </rule>
   <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
   <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
   <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
