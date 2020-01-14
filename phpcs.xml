@@ -115,7 +115,6 @@
   <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
   <rule ref="SlevomatCodingStandard.Classes.TraitUseDeclaration"/>
   <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing"/>
-  <rule ref="SlevomatCodingStandard.ControlStructures.ControlStructureSpacing"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
   <rule ref="SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator"/>
   <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
