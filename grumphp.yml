@@ -84,6 +84,17 @@ parameters:
     yamllint:
       ignore_patterns: "%convention.yamllint_ignore_pattern%"
     securitychecker: ~
+    phpparser:
+      visitors:
+        forbidden_function_calls:
+          blacklist:
+            - var_dump
+            - var_export
+            - debug
+            - echo
+        forbidden_static_method_calls:
+          blacklist:
+            - TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump
 
   extensions:
     - PLUS\GrumPHPXliffTask\ExtensionLoader
