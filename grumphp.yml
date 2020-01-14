@@ -18,6 +18,9 @@ parameters:
     - ".Build"
     - "tmp-phpqa"
     - "Configuration/TCA"
+
+  convention.phpstan_configuration: ~
+  convention.phpstan_level: 5
   convention.phpstan_ignore_pattern:
     - "ext_emconf.php"
     - "tmp-phpqa/*"
@@ -36,6 +39,8 @@ parameters:
       additional_modifiers: ''
     phpmnd: ~
     phpstan:
+      configuration: "%convention.phpstan_configuration%"
+      level: "%convention.phpstan_level%"
       ignore_patterns: "%convention.phpstan_ignore_pattern%"
     phpcpd:
       exclude: "%convention.phpcpd_ignore_pattern%"
