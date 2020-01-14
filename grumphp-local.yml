@@ -1,0 +1,6 @@
+#  this file is for THIS repository to adjust the config paths
+imports:
+  - { resource: grumphp.yml }
+
+parameters:
+  package_dir: "."
