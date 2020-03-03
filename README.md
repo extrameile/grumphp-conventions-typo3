@@ -19,7 +19,7 @@ composer config extra.typo3/cms.web-dir .Build/Web
 ## Install
 
 ~~~shell
-composer config repositories.grumphp-conventions-typo3 vcs https://github.com/akiessling/grumphp-conventions-typo3.git
+composer config repositories.grumphp-conventions-typo3 vcs https://github.com/extrameile/grumphp-conventions-typo3.git
 composer require --dev extrameile/grumphp-conventions-typo3 dev-master
 ~~~
 
